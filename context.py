@@ -15,6 +15,11 @@ while True:
         guess = int(input("Enter your guess number: "))
         attempt += 1
 
+
+        if attempt==5:
+          print("GAME OVER")
+          break
+
         if guess < 1 or guess > 100:
             print("Enter a number between 1-100")
 
